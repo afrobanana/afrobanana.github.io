@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Testing"
+date:   2013-06-08 12:51:20
+categories: news
+---
+
+<h1>{{ page.title }}</h1>
