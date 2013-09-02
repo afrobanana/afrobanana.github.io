@@ -1,0 +1,13 @@
+<div class="abr-post-preview">
+    <h3 class="abr-heading"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+    <div class="abr-post-meta">
+        {% if post.image %}
+        <div class="abr-post-image">
+            <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/static/images/{{ post.image }}.preview.jpg" alt="{{ post.title }}"></a>
+        </div>
+        {% endif %}
+        <span class="abr-post-date">{{ post.date | date_to_string }}</span>
+        <span class="abr-post-categories">{{ post.tags }}</span>
+    </div>
+    <div class="abr-post-excerpt"><p>{{ post.excerpt }}</p></div>
+</div>

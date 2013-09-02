@@ -1,0 +1,9 @@
+<nav class="abr-events-list">
+    <ul>
+    {% for post in site.categories.events %}
+        <li class="abr-nav-item{% if page.url == post.url %} abr-nav-active{% endif %}">
+            {% include posts/preview.html %}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

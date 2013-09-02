@@ -1,0 +1,59 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en"  xmlns:og="http://ogp.me/ns#" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="en" xmlns:og="http://ogp.me/ns#" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" xmlns:og="http://ogp.me/ns#" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" xmlns:og="http://ogp.me/ns#" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" xmlns:og="http://ogp.me/ns#" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} .:. {{ site.name }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="copyright" content="2011 - {{ site.time | date: "%Y" }} Afro Banana Republic">
+    <meta name="author" content="github.com/rudasn">
+    <meta name="source" content="github.com/afrobanana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta property="fb:admins" content="273104166" >
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" >
+    <meta property="og:title" content="{{ page.title }} .:. {{ site.name }}" >
+    <meta property="og:image" content="{{ site.url }}/static/images/{% if page.image %}{{ page.image }}{% else %}logos/afrobanana.jpg{% endif %}" >
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" >
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="The Afro Banana Republic, Cyprus">
+    <link rel="stylesheet" href="/static/css/abr.css?v={{ site.time | date: "%U%j%H%S" }}" media="all">
+    {% if page.style %}
+    <link rel="stylesheet" href="/static/css/{{ page.style }}.css?v={{ site.time | date: "%U%j%H%S" }}" media="all">
+    {% endif %}
+</head>
+<body>
+<script type="text/javascript">
+(function(){var bcn = document.body.parentNode.className;document.body.parentNode.className=bcn.replace(/no\-js/,'has-js');})();
+</script>
+<div class="abr-container">
+    <header class="abr-header-global">
+        <h1 class="abr-title"><a href="/">{{ site.name }}</a></h1>
+        <nav class="abr-nav-global">
+            {% include navigation/global.html %}
+        </nav>
+    </header>
+    <hr class="abr-helper">
+    <section class="abr-content">
+        {{ content }}
+    </section>
+    <hr class="abr-helper">
+    <footer class="abr-footer-global">
+        {% include social/all.html %}
+        {% include social/newsletter.signup.html %}
+    </footer>
+</div>
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = [['_setAccount', 'UA-25314979-1'], ['_trackPageview']];
+(function(d, t) {var g = d.createElement(t), s = d.getElementsByTagName(t)[0];g.async = true;g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';s.parentNode.insertBefore(g, s);})(document, 'script');
+</script>
+</body>
+</html>

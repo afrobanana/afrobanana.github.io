@@ -1,0 +1,20 @@
+<article class="abr-post">
+    <h2 class="abr-post-title">{{ page.title }}</h2>
+    <div class="abr-post-meta">
+        {% if page.image %}
+        <div class="abr-post-image">
+            <img src="{{ site.url }}/static/images/{{ page.image }}.jpg" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+        <span class="abr-post-date">{{ page.date | date_to_string }}</span>
+        <sppan class="abr-post-categories">{{ page.tags }}</sppan>
+    </div>
+    <div class="abr-post-content">{{ content }}</div>
+    <div class="abr-post-media">
+        {% if page.bandcamp %}{% include media/sounds.bandcamp.html %}{% endif %}
+        {% if page.vimeo %}{% include media/videos.vimeo.html %}{% endif %}
+        {% if page.youtube %}{% include media/videos.youtube.html %}{% endif %}
+        {% if page.flickr %}{% include media/photos.flickr.html %}{% endif %}
+        {% if page.comments %}{% include social/comments.html %}{% endif %}
+    </div>
+</article>

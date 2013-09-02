@@ -1,3 +1,5 @@
-name: Afro Banana Republic
+name: "Afro Banana Republic"
+description: "The Afro Banana Republic is a team composed of artists from various fields who set out to develop the Cypriot creative alternative scene. By encouraging collaborations between different fields we aim to explore the potential of home grown talent. By providing a platform for these artists to produce and present their work, we allow for them to promote their art and themselves in Cyprus and the rest of the world"
+domain: "afrobananarepublic.com"
 pygments: true
-testing: AAA
+permalink: /:categories/:year-:month-:title/

@@ -1,0 +1,15 @@
+---
+title: "The AliG Project"
+date: 2012-09-18
+image: "2012-09/alig-project/flyer.jpg"
+flickr: "72157631838221185"
+vimeo: "50222902"
+layout: events
+categories: events
+---
+
+With the aim to reshape the future of our city, The Afro
+Banana Republic presented its creative intentions and aspirations to
+the European Selection Panel, during the presentation of **Nicosia:
+Candidate European Capital of Culture 2017**.
+
