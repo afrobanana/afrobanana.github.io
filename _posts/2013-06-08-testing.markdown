@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Testing"
-date:   2013-06-08
-categories: news
----
-
-## HELLO!

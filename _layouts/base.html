@@ -18,13 +18,13 @@
     <meta property="fb:admins" content="273104166" >
     <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:type" content="website" >
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" >
+    <meta property="og:url" content="http://www.{{ site.domain }}{{ page.url }}" >
     <meta property="og:title" content="{{ page.title }} .:. {{ site.name }}" >
-    <meta property="og:image" content="{{ site.url }}/static/images/{% if page.image %}{{ page.image }}{% else %}logos/afrobanana.jpg{% endif %}" >
+    <meta property="og:image" content="http://www.{{ site.domain }}/static/images/{% if page.image %}{{ page.image }}{% else %}logos/afrobanana.jpg{% endif %}" >
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" >
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="The Afro Banana Republic, Cyprus">
-    <link rel="stylesheet" href="/static/css/abr.css?v={{ site.time | date: "%U%j%H%S" }}" media="all">
+    <link rel="stylesheet" href="/static/css/main.css?v={{ site.time | date: "%U%j%H%S" }}" media="all">
     {% if page.style %}
     <link rel="stylesheet" href="/static/css/{{ page.style }}.css?v={{ site.time | date: "%U%j%H%S" }}" media="all">
     {% endif %}
