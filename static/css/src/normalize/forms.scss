@@ -1,0 +1,63 @@
+/**
+ * normalize/forms.scss
+ * @author rudas@afrobananarepublic.com (Nicolas Rudas)
+ * Copyright (c) 2013 The Afro Banana Republic
+ */
+
+/***
+ VARIABLES
+ *****************************************************************************/
+
+
+/***
+ STYLES
+ *****************************************************************************/
+
+#{$all-text-inputs}, textarea {
+    // Variables
+    $_formsInputsTextareaBorderColor: lighten($borderColor, 10%);
+    $_formsInputsTextareaTextColor: lighten($textColor, 40%);
+
+    $_formsInputsTextareaBoxShadowIn: inset  1px 1px 5px 1px $_formsInputsTextareaBorderColor;
+    $_formsInputsTextareaBoxShadowOutFocus: 0 0 $padding / 2.5 $borderColor;
+    $_formsInputsTextareaBoxShadowInFocus: inset 0 0 0 0 #fff;
+
+    color: inherit;
+    padding: $gutter / 2;
+    border: 1px solid $borderColor;
+    background-color: #fefefe;
+
+    @include transition(box-shadow 300ms);
+    @include box-shadow($_formsInputsTextareaBoxShadowIn);
+
+    &:focus, &.is-focused {
+        outline: none;
+        border-color: $_formsInputsTextareaBorderColor;
+        @include box-shadow($_formsInputsTextareaBoxShadowInFocus, $_formsInputsTextareaBoxShadowOutFocus);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        border-color: $_formsInputsTextareaBorderColor;
+    }
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: $_formsInputsTextareaTextColor;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $_formsInputsTextareaTextColor;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $_formsInputsTextareaTextColor;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $_formsInputsTextareaTextColor;
+    }
+
+}
+
+textarea {
+    line-height: $line-height;
+}
+
+

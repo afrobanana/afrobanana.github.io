@@ -1,0 +1,64 @@
+/**
+ * elements/forms.scss
+ * @author rudas@afrobananarepublic.com (Nicolas Rudas)
+ * Copyright (c) 2013 The Afro Banana Republic
+ */
+
+/***
+ VARIABLES
+ *****************************************************************************/
+
+/***
+ STYLES
+ *****************************************************************************/
+.form-select,
+.form-textarea,
+.form-checkboxgroup,
+.form-radiogroup,
+.form-input {
+    margin-bottom: $gutter / 1.5;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form-checkboxgroup,
+.form-radiogroup {
+    .form-input,
+    .form-radio {
+        margin-bottom: $gutter / 3;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.form-inputgroup-label {
+    // display: none;
+}
+
+.form-input-item-has-figure {
+    margin: 0 $gutter $gutter 0 !important;
+    min-width: 23.2%;
+    display: inline-block;
+
+    input:disabled + label img {
+        opacity: 0.6;
+    }
+
+    input:checked + label img {
+        opacity: 1;
+    }
+
+    label img {
+        // max-width: 150px;
+        // max-height: 150px;
+        vertical-align: top;
+    }
+}
+
+input[size="1"] {
+    width: 1em;
+}

@@ -1,0 +1,39 @@
+/**
+ * elements/buttons.scss
+ * @author rudas@afrobananarepublic.com (Nicolas Rudas)
+ * Copyright (c) 2013 The Afro Banana Republic
+ */
+
+
+/***
+ VARIABLES
+ *****************************************************************************/
+
+
+/***
+ MIXINS
+ *****************************************************************************/
+
+/***
+ HELPERS
+ *****************************************************************************/
+
+
+/***
+ STYLES
+ *****************************************************************************/
+
+._btn {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+}
+
+.btn {
+    @include button(simple, #fefefe);
+    @extend ._btn;
+}
+
+.btn-primary {
+    @include button(simple, $blue);
+    @extend ._btn;
+}

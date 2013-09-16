@@ -1,0 +1,80 @@
+/**
+ * variables.scss
+ * @author rudas@afrobananarepublic.com (Nicolas Rudas)
+ * Copyright (c) 2013 The Afro Banana Republic
+ */
+
+/***
+ VARIABLES
+ *****************************************************************************/
+
+// Structure
+$gutter: 15px;
+$padding: 10px;
+$maxWidthReadable: 620px;
+$maxWidth: 1140px;
+$borderRadius: 6px;
+
+// Typo
+$fontSize: 16px;
+$fontSizeLarge: $fontSize + 2;
+$fontSizeLarger: $fontSize + 4;
+$fontSizeLargest: $fontSize + 10;
+$fontSizeMaximum: $fontSize + 14;
+$fontSizeSmall: $fontSize - 2;
+$fontSizeSmaller: $fontSize - 4;
+$fontSizeSmallest: $fontSize - 6;
+$fontSizeMinimum: $fontSize - 8;
+
+$line-height: 1.67;
+
+// Colors
+$blue: #4679D5;
+$blueDark: #334F7B;
+$blueLight: #97BCF8;
+$brown: #422000;
+$brownLight: #68534A;
+$black: #313131;
+$orange: #F27800;
+$yellow: #FFC200;
+$green: #46a546;
+$red: #cc1100;
+$pink: #c3325f;
+$purple: #7a43b6;
+
+// Colors
+$red: #DC6557;
+$redDark: #744139;
+$brown: #613C36;
+$orange: #D29239;
+$yellow: #EBA03F;
+$green: #56BE8F;
+$greenDark: #C3B26B;
+
+// States and alerts
+$successText: #468847;
+$successBackground: #dff0d8;
+
+$warningText: #c09853;
+$warningBackground: #fcf8e3;
+
+$errorText: #bd362f;//#b94a48;
+$errorBackground: #f2dede;
+
+$infoText: #3a87ad;
+$infoBackground: #d9edf7;
+
+// Theme
+$primary: $orange;
+$secondary: $black;
+$tertiary: $brown;
+$helper1: $yellow;
+$helper2: $blue;
+$helper3: $yellow;
+$helper4: $green;
+
+
+$textColor: #444;
+
+$borderColor: #c1c1c1;
+$borderColorLight: #ccc;

@@ -1,0 +1,18 @@
+/**
+ * elements/fonts.scss
+ * @author rudas@afrobananarepublic.com (Nicolas Rudas)
+ * Copyright (c) 2013 The Afro Banana Republic
+ */
+
+/***
+ VARIABLES
+ *****************************************************************************/
+@font-face {
+    font-family: 'BLOKKRegular';
+    src: url('../fonts/blokk/blokk.eot');
+    src: url('../fonts/blokk/blokk.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/blokk/blokk.woff') format('woff'),
+         url('../fonts/blokk/blokk.svg#BLOKK') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

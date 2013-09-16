@@ -1,0 +1,321 @@
+/**
+ * elements/nav.scss
+ * @author rudas@afrobananarepublic.com (Nicolas Rudas)
+ * Copyright (c) 2013 The Afro Banana Republic
+ */
+
+/***
+ VARIABLES
+ *****************************************************************************/
+
+/* =menus
+======================================================================== */
+
+
+.nav-horizontal {
+    @extend .clearfix;
+
+    > .nav-item {
+        float: left;
+        position: relative;
+        margin-bottom: 0;
+    }
+}
+
+
+.nav-vertical {
+
+    .nav-item {
+        a {
+
+        }
+
+        .nav-item  {
+            a {
+                padding-left: $padding * 5;
+            }
+
+            .nav-item  { // up to 3 levels
+                a {
+                    padding-left: $padding * 8;
+                }
+            }
+        }
+    }
+}
+
+.nav-item {
+
+    &.is-active {
+        font-weight: normal;
+
+        > a  {
+            // background-color: $backgroundActiveColor;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &.is-active {
+
+        .nav-horizontal,
+        .nav-vertical {
+            display: block !important;
+            // background-color:  $backgroundActiveColorSoft;
+        }
+    }
+
+    > a {
+        // color: $linkColor;
+        display: block;
+        padding: $padding * 1.2 $padding * 2;
+    }
+
+}
+
+
+/* =nav-group
+======================================================================== */
+.nav-group {
+    @extend .clearfix;
+
+    .nav-horizontal {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nav-vertical {
+        margin-bottom: $gutter;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.nav-group-name {
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    // color: @textColorSoft;
+    margin-bottom: $gutter / 2;
+    padding-left: $padding * 2;
+}
+
+/* =pagination
+======================================================================== */
+.pagination {
+    line-height: 1;
+    // color: @textColor;
+    display: inline-block;
+    vertical-align :middle;
+    // .border-radius();
+    border-radius: $borderRadius;
+}
+
+.pagination-item {
+    display: inline;
+
+    a {
+        float: left;
+        padding: $padding $padding * 2;
+        text-decoration: none;
+        // border: 1px solid $borderColor;
+        border: 1px solid;
+        border-left-width: 0;
+        cursor: pointer;
+        // color: $textColor;
+    }
+
+    &:first-child a {
+        border-left-width: 1px;
+        border-radius: $borderRadius 0 0 $borderRadius;
+    }
+
+    &:last-child a {
+        border-radius: 0 $borderRadius $borderRadius 0;
+    }
+
+    &.is-active {
+
+        font-weight: bold;
+
+        a {
+            // background-color: @backgroundActiveColor !important;
+            // color: @white;
+        }
+    }
+
+    &.is-last {
+        a {
+            // border-right: 1px solid @borderColor;
+            border-right: 1px solid;
+            display: inline-block;
+        }
+    }
+
+    &.is-disabled a,
+    &.is-disabled a:hover {
+        // color: @textColorSoft;
+        background-color: transparent;
+        cursor: default;
+    }
+
+}
+
+.pagination-steps {
+    border-radius: 0;
+
+    .pagination-item a {
+        margin-right: $gutter;
+        // background-color: @backgroundActiveColor;
+        border-width: 2px;
+        border-radius: $gutter;
+        position:relative;
+
+        &:after {
+            position: absolute;
+            // border-top: 2px solid @borderColor;
+            width:55%;
+            left:100%;
+            content:' ';
+            // z-index: -1;
+            top: 0.7em;
+        }
+    }
+
+    .pagination-item:last-child a:after {
+        display: none;
+    }
+
+    .pagination-step-down {
+        a {
+            // color: @white;
+            // background-color: lighten( @backgroundActiveColor, 35%);
+        }
+    }
+
+    .pagination-step-up {
+        a {
+            background-color: inherit;
+        }
+    }
+
+}
+
+.pagination-more {
+    cursor: pointer;
+
+    &.is-active {
+        opacity: 0.6;
+        text-decoration: none;
+    }
+}
+
+
+
+
+.lt-ie8 .pagination ul {
+    display: inline;
+    zoom: 1;
+}
+
+/* =breadcrumb
+========================================================================== */
+.breadcrumb {
+    @extend text_block;
+    // Although useful, breacrumbs come secondary to other sections in the page
+    // so we use a smaller font size and a softer color.
+    font-size: $fontSizeSmall;
+    // color: @textColorSoft;
+
+    ol, ul {
+        display: inline;
+    }
+}
+
+.breadcrumb-item {
+    display:inline-block;
+    margin-bottom: 0;
+
+    .breadcrumb-item {
+        display: none;
+    }
+
+    .breadcrumb-item.is-active {
+        display: inherit;
+    }
+
+    > ol {
+
+    }
+
+    > ol:before,
+    &:before {
+        content: '\203A';
+        margin:0 $padding;
+    }
+
+    &:first-child:before {
+        content: '';
+        margin: 0;
+    }
+
+    &:last-child {
+        a:link, a:visited {
+            text-decoration: none;
+        }
+    }
+
+    a {
+        &:link,
+        &:visited {
+            // color: inherit;
+            text-decoration: underline;
+            // background-color: inherit;
+        }
+    }
+}
+
+/* =tabs
+========================================================================== */
+.tab-content{
+    display:none;
+}
+
+.tab-content.tab-active {
+    display:block;
+}
+
+
+/* Responsive Layout */
+// @media (min-width: 1200px) { /* Large display and above */
+
+// }
+
+// @media (min-width: 980px) { /* The default size and above */
+
+// }
+
+// @media (min-width: 768px) { /* Portrait Tablets and above */
+
+// }
+
+@media (max-width: 767px){ /* Smartphones and Tablets only */
+
+    // Clear floats on grouped navigations.
+    .nav-group {
+        > .pull-right,
+        > .pull-left {
+            float: none;
+        }
+    }
+}
+
+// @media (max-width: 480px){ /* Smartphones only */
+
+// }
