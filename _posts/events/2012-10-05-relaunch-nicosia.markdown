@@ -1,7 +1,7 @@
 ---
 title: "Relaunch! Street Party"
 date: 2012-10-05
-image: "2012-10/relaunch-nicosia/flyer.jpg"
+image: "events/2012-10-relaunch-nicosia/flyer"
 vimeo: "51100648"
 layout: event
 category: events

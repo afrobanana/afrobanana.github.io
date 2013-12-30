@@ -1,14 +1,13 @@
 ---
-title: "Colony 362"
-date: 2013-09-14
-image: "events/2013-09-colony361/flyer.jpg"
+title: "Colony 361"
+image: "events/2013-09-colony361/flyer"
 flickr: 
 vimeo: 
 youtube: 
 bandcamp: 
 mixcloud: 
 layout: event
-categories: events
+category: events
 ---
 
 **COLONY361** is a prototype community created by the ABR to explore:
@@ -18,4 +17,4 @@ by a multidisciplinary cast of characters.
 1. A human & realistic approach in re-creating our happy place.
 1. Good times.
 
-[Learn more about it](/colony361/).
+[Learn more about it](http://colony361.afrobananarepublic.com).

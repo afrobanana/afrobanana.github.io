@@ -1,13 +1,13 @@
 <article class="abr-post">
-    <h2 class="abr-post-title">{{ page.title }}</h2>
+    <h3 class="abr-post-title">{{ page.title }}</h3>
     <div class="abr-post-meta">
+        <div class="abr-post-date">{{ page.date | date_to_string }}</div>
+        <div class="abr-post-tags">{{ page.tags }}</div>
         {% if page.image %}
         <div class="abr-post-image">
             <img src="{{ site.url }}/static/images/{{ page.image }}.jpg" alt="{{ page.title }}">
         </div>
         {% endif %}
-        <span class="abr-post-date">{{ page.date | date_to_string }}</span>
-        <sppan class="abr-post-categories">{{ page.tags }}</sppan>
     </div>
     <div class="abr-post-content">{{ content }}</div>
     <div class="abr-post-media">

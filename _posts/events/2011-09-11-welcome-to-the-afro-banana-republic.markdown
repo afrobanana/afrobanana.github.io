@@ -1,7 +1,7 @@
 ---
 title: "Welcome to The Afro Banana Republic"
 date: 2011-09-10
-image: "2011-09/welcome-to-the-abr-republic/flyer.jpg"
+image: "events/2011-09-welcome/flyer"
 flickr: "72157631199446188"
 youtube: "PL42914AFFDAAFBD05"
 layout: event

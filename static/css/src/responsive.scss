@@ -1,0 +1,45 @@
+/**
+ * responsive
+ *****************************************************************************/
+
+@media (min-width: 1200px) { /* Large display and above */
+
+}
+
+@media (min-width: 980px) { /* The default size and above */
+
+}
+
+@media (min-width: 768px) { /* Portrait Tablets and above */
+    .abr-header-global {
+        float: left;
+        margin-right: $gutter * 2;
+    }
+
+    .abr-content {
+        overflow: hidden;
+    }
+
+    .abr-footer-global {
+        clear: both;
+    }
+
+    .abr-post-preview {
+        .abr-post-image {
+            float: right;
+            margin: 0 0 $gutter $gutter;
+        }
+    }
+
+    .abr-events-list {
+
+    }
+}
+
+@media (max-width: 767px){ /* Smartphones and Tablets only */
+
+}
+
+@media (max-width: 480px){ /* Smartphones only */
+
+}

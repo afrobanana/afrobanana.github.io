@@ -1,5 +1,7 @@
 <ol>
-    <li class="abr-nav-item"><a href="/blog/" title="Blog">Blog</a></li>
-    <li class="abr-nav-item"><a href="/events/" title="Events">Events</a></li>
-    <li class="abr-nav-item"><a href="/sounds/" title="Sounds">Sounds</a></li>
+    <li class="abr-nav-item{% if page.category == 'home' %} abr-nav-item-active{% endif %}"><a href="/" title="Home">Home</a></li>
+    <li class="abr-nav-item{% if page.category == 'blog' %} abr-nav-item-active{% endif %}"><a href="/blog/" title="Blog">Blog</a></li>
+    <li class="abr-nav-item{% if page.category == 'events' %} abr-nav-item-active{% endif %}"><a href="/events/" title="Events">Events</a></li>
+    <li class="abr-nav-item{% if page.category == 'sounds' %} abr-nav-item-active{% endif %}"><a href="/sounds/" title="Sounds">Sounds</a></li>
+    <li class="abr-nav-item{% if page.category == 'about' %} abr-nav-item-active{% endif %}"><a href="/about/" title="About">About</a></li>
 </ol>

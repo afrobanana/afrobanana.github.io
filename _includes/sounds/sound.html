@@ -2,7 +2,9 @@
 {% include posts/post.html %}
 </section>
 
+{% if site.categories.sounds.size > 1 %}
 <aside class="abr-sound-related">
     <h2 class="abr-heading">Other sounds</h2>
     {% include sounds/list.html %}
 </aside>
+{% endif %}

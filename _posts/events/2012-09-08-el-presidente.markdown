@@ -1,7 +1,7 @@
 ---
 title: "El Presidente"
 date: 2012-09-08
-image: "2012-09/el-presidente/flyers.jpg"
+image: "events/2012-09-el-presidente/flyer"
 flickr: "72157631206498508"
 vimeo: "47794070"
 youtube: "PL_iYNI5skpkVSjtXQRxXOjFS_qTxGD0Cq"

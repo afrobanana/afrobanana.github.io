@@ -10,6 +10,7 @@
 body {
     font-family: $lucida-grande;
     color: $textColor;
+    border-top: 5px solid #3f3f3f;
     background-color: #fff;
 }
 
@@ -17,18 +18,21 @@ hr {
     border-top: 3px solid $borderColorLight;
 }
 
-nav a {
-    color: $secondary;
+a:link, a:visited {
+    color: $blue;
 }
 
-a:link, a:visited {
-    color: $helper3;
+nav a:link, nav a:visited {
+    color: $secondary;
 }
 
 fieldset {
     border-color: $borderColor;
 }
 
+aside {
+    @extend .smaller;
+}
 
 .abr-container {
     @extend .wrapper;
@@ -52,21 +56,92 @@ fieldset {
 
 .abr-header-global {
     .abr-logo {
+
+        margin: 0;
+        line-height: 1;
+
         a {
             @extend .ir;
 
-            margin: 0 auto;
-            width: 300px;
-            height: 300px;
-            background: url("../images/logos/afrobanana-300x300.jpg") no-repeat 0 0;
+            width: 150px;
+            height: 150px;
+            background: url("../images/logos/afrobanana-150x150.jpg") no-repeat 0 0;
         }
     }
 }
 
-.abr-page-about {
-    max-width: $maxWidthReadable;
+.abr-home-hero {
+    h1 {
+        color: $yellow;
+    }
+}
+
+.abr-nav-global {
+    margin: $gutter 0 0 (75px / 2);
+
+    .abr-nav-item {
+        margin-bottom: $gutter;
+    }
+}
+
+.abr-nav-item-active {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.abr-current-category {
+    color: #999;
+    font-weight: normal;
+    font-size: 100%;
+
+    a {
+        color: inherit;
+    }
+}
+
+.abr-post-preview {
+    @extend .clearfix;
+
+    margin-bottom: $gutter * 3;
+
+    .abr-heading {
+        a {
+            color: $yellow;
+        }
+    }
+}
+
+.abr-post {
+    .abr-post-title {
+        font-size: $fontSizeLargest;
+    }
+}
+
+.abr-post-meta {
+    @extend .smaller;
+
+    color: #999;
+}
+
+.abr-post-image {
+    margin: $gutter auto;
+
+    img {
+        padding: 1px;
+        border: 1px solid $borderColor;
+    }
+}
+
+.abr-page-about,
+.abr-post-excerpt,
+.abr-post-content {
+    @extend .clearfix;
 
     margin: $gutter auto;
+
+    ol, ul, p {
+        max-width: $maxWidthReadable;
+    }
 }
 
 .abr-footer-global {

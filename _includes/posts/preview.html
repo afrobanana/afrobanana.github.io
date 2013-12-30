@@ -6,8 +6,8 @@
             <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/static/images/{{ post.image }}.preview.jpg" alt="{{ post.title }}"></a>
         </div>
         {% endif %}
-        <span class="abr-post-date">{{ post.date | date_to_string }}</span>
-        <span class="abr-post-categories">{{ post.tags }}</span>
+        <div class="abr-post-date">{{ post.date | date_to_string }}</div>
+        <div class="abr-post-tags">{{ page.tags }}</div>
     </div>
     <div class="abr-post-excerpt"><p>{{ post.excerpt }}</p></div>
 </div>

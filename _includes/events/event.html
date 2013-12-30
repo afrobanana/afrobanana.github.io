@@ -2,7 +2,9 @@
 {% include posts/post.html %}
 </section>
 
+{% if site.categories.events.size > 1 %}
 <aside class="abr-event-related">
     <h2 class="abr-heading">Other Events</h2>
     {% include events/list.html %}
 </aside>
+{% endif %}

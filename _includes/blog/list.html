@@ -1,9 +1,11 @@
 <nav class="abr-blog-list">
     <ul>
     {% for post in site.categories.blog %}
-        <li class="abr-nav-item{% if page.url == post.url %} abr-nav-active{% endif %}">
-            {% include posts/preview.html %}
-        </li>
+        {% if page.url != post.url %}
+            <li class="abr-nav-item">
+                {% include posts/preview.html %}
+            </li>
+        {% endif %}
     {% endfor %}
     </ul>
 </nav>

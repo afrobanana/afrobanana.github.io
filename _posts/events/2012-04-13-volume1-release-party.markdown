@@ -1,10 +1,10 @@
 ---
-title: "ABR Release Volume #1"
+title: "ABR Volume #1 Release Party"
 date: 2012-04-13
-image: "sounds/2012-04-volume1-release/cover"
-bandcamp: "3514908781"
-layout: sound
-category: sounds
+image: "events/2012-04-volume1-release/flyer"
+comments: true
+layout: event
+category: events
 ---
 
 Debut Release on Holy Friday with a hot selection of trax from label natives Cusack, Alexis Baitelman and head honcho Cotsios o Pikatillis.
