@@ -19,6 +19,8 @@ Debut Release on Holy Friday with a hot selection of trax from label natives Cus
 ### HEading 3             
 
 
+![](https://f.cloud.github.com/assets/4652809/628680/215baed2-d0e3-11e2-8537-c612c9ae3740.jpg)
+
 <iframe width="560" height="315" src="//www.youtube.com/embed/R8b4kXBF01s?list=PLJa_sXrJUZb8ZuaQShicg6oWI682Bavjb" frameborder="0" allowfullscreen></iframe>
 
 
